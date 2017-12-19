@@ -23,7 +23,7 @@
         <activity android:name="com.example.acdaxmlclase.Notas" />
         <activity android:name="com.example.acdaxmlclase.Noticias" />
         <activity android:name="com.example.acdaxmlclase.Titulares" />
-        <activity android:name="com.example.acdaxmlclase.CreacionXML"></activity>
+        <activity android:name="com.example.acdaxmlclase.EscribirXML"></activity>
     </application>
 
 </manifest>

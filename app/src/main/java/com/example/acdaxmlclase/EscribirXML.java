@@ -3,7 +3,7 @@ package com.example.acdaxmlclase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class CreacionXML extends AppCompatActivity {
+public class EscribirXML extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnPartes, btnNotas, btnTitulares;
+    Button btnPartes, btnNotas, btnTitulares, btnNoticias, btnEsribirXml;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnNotas.setOnClickListener(this);
         btnTitulares = findViewById(R.id.btnTitulares);
         btnTitulares.setOnClickListener(this);
+        btnNoticias = findViewById(R.id.btnNoticias);
+        btnNoticias.setOnClickListener(this);
+        btnEsribirXml = findViewById(R.id.btnEscribirXml);
+        btnEsribirXml.setOnClickListener(this);
     }
 
     @Override
@@ -32,6 +36,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if (view == btnTitulares){
             startActivity(new Intent(MainActivity.this,Titulares.class));
+        }
+        if (view == btnNoticias){
+            startActivity( new Intent(MainActivity.this,Noticias.class));
+        }
+        if (view == btnEsribirXml){
+            startActivity(new Intent(MainActivity.this,EscribirXML.class));
         }
     }
 }
