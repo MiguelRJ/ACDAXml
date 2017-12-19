@@ -9,6 +9,8 @@ import com.example.xmlacda.R;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.StringReader;
 
@@ -122,6 +124,46 @@ public class Analisis {
 
         cadena.append("Alumnos: " + numAlumnos + "\n");
         cadena.append("Media: " + String.format("%.2f",notasTotal/numAlumnos));
+
+        return cadena.toString();
+    }
+
+    public static String analizarRSS(File file) throws NullPointerException, XmlPullParserException, IOException {
+
+        boolean dentroItem = false;
+        boolean dentroTitle = false;
+
+        StringBuilder cadena = new StringBuilder();
+        XmlPullParser xpp = Xml.newPullParser();
+        xpp.setInput(new FileReader(file));
+        int eventType = xpp.getEventType();
+
+        while (eventType != XmlPullParser.END_DOCUMENT) {
+            switch (eventType) {
+                case XmlPullParser.START_TAG:
+                    if(xpp.getName().equals("item")){
+                        dentroItem = true;
+                    }
+                    if(dentroItem && xpp.getName().equals("title")){
+                        dentroTitle=true;
+                    }
+                    break;
+                case XmlPullParser.TEXT:
+                    if(dentroItem && dentroTitle){
+                        cadena.append(xpp.getText()+"\n");
+                    }
+                    break;
+                case XmlPullParser.END_TAG:
+                    if(xpp.getName().equals("item")){
+                        dentroItem = false;
+                    }
+                    if(xpp.getName().equals("title")){
+                        dentroTitle = false;
+                    }
+                    break;
+            }
+            eventType = xpp.next();
+        }
 
         return cadena.toString();
     }
