@@ -1,10 +1,10 @@
-package com.example.xmlacda;
+package com.example.acdaxmlclase;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.xmlacda.utils.Analisis;
+import com.example.acdaxmlclase.utils.Analisis;
 
 import org.xmlpull.v1.XmlPullParserException;
 

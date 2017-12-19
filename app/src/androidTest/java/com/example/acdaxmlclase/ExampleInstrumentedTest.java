@@ -1,4 +1,4 @@
-package com.example.xmlacda;
+package com.example.acdaxmlclase;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

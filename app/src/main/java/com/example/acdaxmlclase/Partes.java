@@ -1,16 +1,15 @@
-package com.example.xmlacda;
+package com.example.acdaxmlclase;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.example.xmlacda.utils.Analisis;
+import com.example.acdaxmlclase.utils.Analisis;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
 import java.io.IOException;
-import java.io.InputStream;
 
 public class Partes extends AppCompatActivity {
 

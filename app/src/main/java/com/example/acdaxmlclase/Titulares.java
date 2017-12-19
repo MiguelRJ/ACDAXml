@@ -1,4 +1,4 @@
-package com.example.xmlacda;
+package com.example.acdaxmlclase;
 
 import android.app.ProgressDialog;
 import android.os.Environment;
@@ -9,8 +9,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.xmlacda.utils.Analisis;
-import com.example.xmlacda.utils.RestClient;
+import com.example.acdaxmlclase.utils.Analisis;
+import com.example.acdaxmlclase.utils.RestClient;
 import com.loopj.android.http.FileAsyncHttpResponseHandler;
 
 import org.xmlpull.v1.XmlPullParserException;

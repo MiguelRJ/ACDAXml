@@ -1,4 +1,4 @@
-package com.example.xmlacda;
+package com.example.acdaxmlclase;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

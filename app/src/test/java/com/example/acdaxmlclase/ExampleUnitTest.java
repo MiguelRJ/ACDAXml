@@ -1,4 +1,4 @@
-package com.example.xmlacda;
+package com.example.acdaxmlclase;
 
 import org.junit.Test;
 

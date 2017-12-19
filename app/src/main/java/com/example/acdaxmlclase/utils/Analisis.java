@@ -1,10 +1,10 @@
-package com.example.xmlacda.utils;
+package com.example.acdaxmlclase.utils;
 
 import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.util.Xml;
 
-import com.example.xmlacda.R;
+import com.example.acdaxmlclase.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
