@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ACDAXml.iml" filepath="$PROJECT_DIR$/ACDAXml.iml" />
-      <module fileurl="file://G:\ACDA\ACDAXml\XMLACDA.iml" filepath="G:\ACDA\ACDAXml\XMLACDA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ACDAXmlClase.iml" filepath="$PROJECT_DIR$/ACDAXmlClase.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://G:\ACDA\ACDAXml\app\app.iml" filepath="G:\ACDA\ACDAXml\app\app.iml" />
     </modules>
   </component>
 </project>
