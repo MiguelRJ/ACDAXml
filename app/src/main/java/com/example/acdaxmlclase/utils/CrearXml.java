@@ -16,6 +16,11 @@ import java.util.ArrayList;
 
 public class CrearXml {
 
+    public static String TITULO = "titulo";
+    public static String FECHA = "fecha";
+    public static String URL = "url";
+    public static String DESCIPCION = "descripcion";
+
     public static void crearXML(ArrayList<Noticia> noticias, String fichero) throws IOException {
         FileOutputStream fout;
         fout = new FileOutputStream(new File(Environment.getExternalStorageDirectory().getAbsolutePath(), fichero));
@@ -25,7 +30,18 @@ public class CrearXml {
         serializer.setFeature("http://xmlpull.org/v1/doc/features.html#indent-output", true); //poner tabulación
         serializer.startTag(null, "titulares");
         for (int i = 0; i < noticias.size(); i++) {
+            serializer.startTag(null,CrearXml.TITULO);
+            serializer.attribute(null,CrearXml.FECHA,noticias.get(i).getFecha());
+            serializer.text(noticias.get(i).getTitulo());
+            serializer.endTag(null,CrearXml.TITULO);
 
+            serializer.startTag(null,CrearXml.URL);
+            serializer.text(noticias.get(i).getUrl());
+            serializer.endTag(null,CrearXml.URL);
+
+            serializer.startTag(null,CrearXml.DESCIPCION);
+            serializer.text(noticias.get(i).getDescripcion());
+            serializer.endTag(null,CrearXml.DESCIPCION);
         }
         serializer.endTag(null, "titulares");
         serializer.endDocument();
