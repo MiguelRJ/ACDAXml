@@ -6,4 +6,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.acdaxmlclase.EscribirXML">
 
+    <Button
+        android:id="@+id/btnDescargar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Descargar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
